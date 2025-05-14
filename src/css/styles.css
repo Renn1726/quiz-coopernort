@@ -19,12 +19,12 @@
 }
 @font-face {
   font-family: "Branding Bold";
-  src: url("/assets/fonts/Branding\ Bold.otf") format("opentype");
+  src: url("/assets/fonts/branding-bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Branding Medium";
-  src: url("/assets/fonts/Branding\ Medium.otf") format("opentype");
+  src: url("/assets/fonts/branding-medium.otf") format("opentype");
 }
 
 #logo {
