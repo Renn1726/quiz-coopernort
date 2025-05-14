@@ -1,9 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Inicio</title>
+    <link rel="stylesheet" href="src/css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <section id="tela-inicial" class="tela-ativa">
+      <img src="assets/images/logo-coopenort.png" alt="Logo" id="logo" />
+      <button id="start-button">Iniciar</button>
+    </section>
+    <section id="tela-pergunta" class="tela">
+      <h1 id="pergunta-alt" class="pergunta">
+        1-Insira aqui um exemplo de pergunta
+      </h1>
+
+      <div id="alternativas" class="alternativas">
+        <button class="alternativa">(a)- Exemplo de resposta</button>
+        <button class="alternativa">(b)- Exemplo de resposta</button>
+        <button class="alternativa">(c)- Exemplo de resposta</button>
+        <button class="alternativa">(d)- Exemplo de resposta</button>
+      </div>
+      <button class="submit-button">Enviar</button>
+    </section>
+    <section id="tela-acerto" class="tela tela-acerto">
+      <img
+        src="assets/icons/icone-de-acerto.png"
+        alt="Icone de acerto"
+        class="correct-icon"
+      />
+      <div class="result-text">
+        <h1 class="resultado"><span>Parabéns,</span> você ganhou um brinde!</h1>
+        <p>Dirija-se ao balcão para retirada do seu prêmio.</p>
+      </div>
+    </section>
+
+    <section id="tela-erro" class="tela tela-erro">
+      <img
+        src="assets/icons/icone-de-erro.png"
+        alt="Icone de erro"
+        class="error-icon"
+      />
+      <div class="result-error-text">
+        <h1 class="result-error">Que pena! você não acertou dessa vez.</h1>
+        <p>
+          Dirija-se ao balcão para retirar seu brinde de participação! Obrigado!
+        </p>
+      </div>
+    </section>
+  </body>
+  <script src="src/js/quiz.js"></script>
 </html>
