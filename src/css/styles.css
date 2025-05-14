@@ -241,6 +241,14 @@
   .tela-erro {
     padding: 0px;
   }
+
+  .result-text h1 {
+    font-size: 80px;
+  }
+
+  .result-text p {
+    font-size: 50px;
+  }
 }
 
 @media (max-height: 750px) {
