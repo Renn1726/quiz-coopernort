@@ -150,7 +150,7 @@
 }
 
 .correct-icon {
-  width: 350px;
+  width: 300px;
   height: auto;
 }
 
@@ -165,6 +165,7 @@
   font-size: 90px;
   color: var(--main-text-color);
   width: 915px;
+  margin-bottom: 32px;
 }
 
 .result-text span {
@@ -199,6 +200,7 @@
   color: var(--error-text-color);
   font-size: 55px;
   text-align: center;
+  margin-bottom: 64px;
 }
 
 .tela {
@@ -216,6 +218,55 @@
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.restart-button {
+  font-family: var(--font-text);
+  background-color: var(--buttom-bg-color);
+  color: var(--buttom-text-color);
+  border: none;
+  padding: 10px 80px;
+  font-size: 70px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+.restart-button:active {
+  background-color: var(--buttom-press-color);
+}
+
+@media (max-height: 1200px) {
+  #logo {
+    width: 500px;
+  }
+  #start-button {
+    font-size: 60px;
+    padding: 10px 60px;
+  }
+  .pergunta {
+    font-size: 40px;
+    padding: 16px;
+  }
+  .alternativa {
+    font-size: 40px;
+  }
+  .submit-button {
+    font-size: 60px;
+    padding: 10px 20px;
+  }
+
+  .tela-erro {
+    padding: 0px;
+  }
+
+  .result-text h1 {
+    font-size: 100px;
+  }
+
+  .result-text p {
+    font-size: 60px;
+  }
 }
 
 @media (max-height: 850px) {
@@ -248,6 +299,25 @@
 
   .result-text p {
     font-size: 50px;
+  }
+
+  .correct-icon {
+    width: 250px;
+  }
+
+  .error-icon {
+    width: 250px;
+  }
+  .result-error {
+    font-size: 95px;
+  }
+  .result-error-text p {
+    font-size: 52px;
+  }
+
+  .restart-button {
+    font-size: 55px;
+    padding: 10px 65px;
   }
 }
 
@@ -285,5 +355,9 @@
 
   .result-error-text p {
     font-size: 40px;
+  }
+
+  .correct-icon {
+    width: 200px;
   }
 }

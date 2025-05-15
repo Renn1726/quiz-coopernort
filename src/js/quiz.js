@@ -400,3 +400,14 @@ botaoEnviar.addEventListener("click", () => {
     alert("Por favor, selecione uma alternativa antes de enviar!");
   }
 });
+
+const botaoReiniciarAcerto = document.getElementById("restart-btn-acerto");
+const botaoReiniciarErro = document.getElementById("restart-btn-erro");
+
+botaoReiniciarAcerto.addEventListener("click", () => {
+  location.reload();
+});
+
+botaoReiniciarErro.addEventListener("click", () => {
+  location.reload();
+});
