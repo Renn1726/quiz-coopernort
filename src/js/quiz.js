@@ -10,6 +10,15 @@ function atualizarVisibilidadeTelas() {
       tela.style.display = "none";
     }
   });
+
+  const telaAcertoAtiva = document
+    .getElementById("tela-acerto")
+    .classList.contains("tela-ativa");
+  if (telaAcertoAtiva) {
+    document.body.classList.add("body-acerto");
+  } else {
+    document.body.classList.remove("body-acerto");
+  }
 }
 const perguntas = [
   {
@@ -349,7 +358,7 @@ alternativasElemento.addEventListener("click", (event) => {
 let perguntaAtual;
 window.onload = () => {
   atualizarVisibilidadeTelas();
-  document.body.style.overflow = "hidden";
+  document.body.style.overflowY = "auto";
 
   perguntaAtual = exibirPerguntaAleatoria();
 };

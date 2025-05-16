@@ -236,6 +236,10 @@
   background-color: var(--buttom-press-color);
 }
 
+.body-acerto {
+  background-color: var(--result-screen-bg-color) !important;
+}
+
 @media (max-height: 1200px) {
   #logo {
     width: 500px;
@@ -359,5 +363,15 @@
 
   .correct-icon {
     width: 200px;
+  }
+}
+
+@media (max-height: 650px) {
+  .result-text h1 {
+    font-size: 70px;
+  }
+
+  .result-text p {
+    font-size: 40px;
   }
 }
